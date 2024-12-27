@@ -1,0 +1,7 @@
+numpy==2.1.0
+openai==1.32.0
+packaging==24.1
+pandas==2.2.2
+pillow==10.4.0
+streamlit==1.37.1
+toml==0.10.2
