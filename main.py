@@ -5,16 +5,20 @@ from tempfile import NamedTemporaryFile
 from Clasificador import ImageClassificator  # Importar la clase ImageClassificator
 
 # Configurar Streamlit para que se muestre en modo "wide"
-st.set_page_config(page_title="Clasificación de ONTs", layout="wide")
+st.set_page_config(page_title="IA para el orden", layout="wide")
 
 # Instanciar el clasificador de imágenes
 clasificador = ImageClassificator()
 
 # Interfaz de Streamlit
-st.title("Detección de ONTs")
+st.title("Organización con IA")
 
 # Sidebar para drag and drop y selección de imágenes pre-cargadas
 with st.sidebar:
+    # Mostrar el logo
+    logo_path = r"Sigma_Alimentos_logotipo.png"
+    st.image(logo_path, use_column_width=True)
+    
     # Subir una imagen
     uploaded_file = st.file_uploader("Sube una imagen", type=["jpg", "jpeg", "png"])
     

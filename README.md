@@ -1,4 +1,1 @@
-# uidetect
-# UISupermarket
-# DetectModems
-"# Demo_Refrigeradores_vision" 
+# Detección de refrigeradores
